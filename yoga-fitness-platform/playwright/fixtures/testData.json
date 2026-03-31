@@ -1,0 +1,39 @@
+{
+  "member": {
+    "email": "user1@test.com",
+    "password": "password",
+    "fullName": "Alex Member"
+  },
+  "memberAlt": {
+    "email": "user2@test.com",
+    "password": "password",
+    "fullName": "Sam Client"
+  },
+  "trainer": {
+    "email": "trainer1@yoga.com",
+    "password": "password",
+    "fullName": "Maya Chen"
+  },
+  "admin": {
+    "email": "admin@yoga.com",
+    "password": "password"
+  },
+  "programs": {
+    "vinyasaId": 1,
+    "stretchId": 2,
+    "hiitId": 3,
+    "powerId": 4
+  },
+  "slots": {
+    "mayaMorning": 1,
+    "mayaSecond": 2,
+    "stretchSlotFirst": 3,
+    "bookFlowA": 12,
+    "bookFlowB": 13,
+    "powerSlotFirst": 11,
+    "payFlow": 14,
+    "cancelFlow": 15,
+    "rescheduleFrom": 7,
+    "rescheduleTo": 8
+  }
+}

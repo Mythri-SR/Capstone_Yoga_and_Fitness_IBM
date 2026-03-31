@@ -1,0 +1,347 @@
+
+Running 120 tests using 1 worker
+
+(node:95792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95792) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 [chromium] › tests\module-01-user-management.spec.js:9:3 › Module 1 — User management (15 scenarios) › M1-TC01: Home page renders header and hero (2.6s)
+  ok   2 [chromium] › tests\module-01-user-management.spec.js:15:3 › Module 1 — User management (15 scenarios) › M1-TC02: Navigate to login from nav (910ms)
+  ok   3 [chromium] › tests\module-01-user-management.spec.js:22:3 › Module 1 — User management (15 scenarios) › M1-TC03: Login shows error on invalid credentials (1.3s)
+  ok   4 [chromium] › tests\module-01-user-management.spec.js:31:3 › Module 1 — User management (15 scenarios) › M1-TC04: Successful member login lands on dashboard (1.1s)
+  ok   5 [chromium] › tests\module-01-user-management.spec.js:37:3 › Module 1 — User management (15 scenarios) › M1-TC05: Logout clears session UI (1.4s)
+  ok   6 [chromium] › tests\module-01-user-management.spec.js:44:3 › Module 1 — User management (15 scenarios) › M1-TC06: Register page shows role selector (948ms)
+  ok   7 [chromium] › tests\module-01-user-management.spec.js:49:3 › Module 1 — User management (15 scenarios) › M1-TC07: Register rejects password shorter than 8 chars (1.1s)
+  ok   8 [chromium] › tests\module-01-user-management.spec.js:59:3 › Module 1 — User management (15 scenarios) › M1-TC08: Register happy path creates member (1.6s)
+  ok   9 [chromium] › tests\module-01-user-management.spec.js:66:3 › Module 1 — User management (15 scenarios) › M1-TC09: Register as trainer exposes trainer-specific flows after login (1.7s)
+  ok  10 [chromium] › tests\module-01-user-management.spec.js:75:3 › Module 1 — User management (15 scenarios) › M1-TC10: Protected dashboard prompts guest to sign in (1.0s)
+  ok  11 [chromium] › tests\module-01-user-management.spec.js:80:3 › Module 1 — User management (15 scenarios) › M1-TC11: Trainer login succeeds (1.1s)
+  ok  12 [chromium] › tests\module-01-user-management.spec.js:86:3 › Module 1 — User management (15 scenarios) › M1-TC12: Login form requires email format (1.0s)
+  ok  13 [chromium] › tests\module-01-user-management.spec.js:94:3 › Module 1 — User management (15 scenarios) › M1-TC13: Duplicate email registration shows error (1.0s)
+  ok  14 [chromium] › tests\module-01-user-management.spec.js:105:3 › Module 1 — User management (15 scenarios) › M1-TC14: Admin can sign in from login form (1.2s)
+  ok  15 [chromium] › tests\module-01-user-management.spec.js:111:3 › Module 1 — User management (15 scenarios) › M1-TC15: Member sessions page requires authentication state (886ms)
+  ok  16 [chromium] › tests\module-02-trainer-discovery.spec.js:8:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC01: Trainers grid loads cards (989ms)
+  ok  17 [chromium] › tests\module-02-trainer-discovery.spec.js:14:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC02: Trainer card shows rating and hourly rate (961ms)
+  ok  18 [chromium] › tests\module-02-trainer-discovery.spec.js:21:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC03: View profile navigates to detail route (961ms)
+  ok  19 [chromium] › tests\module-02-trainer-discovery.spec.js:27:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC04: Trainer detail shows bio and certifications (1.0s)
+  ok  20 [chromium] › tests\module-02-trainer-discovery.spec.js:33:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC05: Trainer detail lists programs (874ms)
+  ok  21 [chromium] › tests\module-02-trainer-discovery.spec.js:38:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC06: Book CTA links to booking with trainer context (1.2s)
+  ok  22 [chromium] › tests\module-02-trainer-discovery.spec.js:44:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC07: Trainers filter form is present (913ms)
+  ok  23 [chromium] › tests\module-02-trainer-discovery.spec.js:50:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC08: Apply filters updates list without error (1.0s)
+  ok  24 [chromium] › tests\module-02-trainer-discovery.spec.js:58:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC09: Reset filters restores full catalog (1.1s)
+  ok  25 [chromium] › tests\module-02-trainer-discovery.spec.js:66:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC10: Trainer list finishes rendering cards (1.0s)
+  ok  26 [chromium] › tests\module-02-trainer-discovery.spec.js:72:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC11: Second seeded trainer is visible (922ms)
+  ok  27 [chromium] › tests\module-02-trainer-discovery.spec.js:77:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC12: Trainer reviews section renders (791ms)
+  ok  28 [chromium] › tests\module-02-trainer-discovery.spec.js:82:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC13: Authenticated member sees review composer (1.4s)
+  ok  29 [chromium] › tests\module-02-trainer-discovery.spec.js:89:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC14: Trainers nav link is reachable from home (1.1s)
+  ok  30 [chromium] › tests\module-02-trainer-discovery.spec.js:95:3 › Module 2 — Trainer discovery (15 scenarios) › M2-TC15: Trainer card exposes data-testid for automation stability (1.0s)
+  ok  31 [chromium] › tests\module-03-program-catalog.spec.js:4:3 › Module 3 — Program catalog (15 scenarios) › M3-TC01: Programs page lists cards (1.1s)
+  ok  32 [chromium] › tests\module-03-program-catalog.spec.js:10:3 › Module 3 — Program catalog (15 scenarios) › M3-TC02: Each card links to book flow with ids (933ms)
+  ok  33 [chromium] › tests\module-03-program-catalog.spec.js:16:3 › Module 3 — Program catalog (15 scenarios) › M3-TC03: Search input filters catalog (1.0s)
+  ok  34 [chromium] › tests\module-03-program-catalog.spec.js:23:3 › Module 3 — Program catalog (15 scenarios) › M3-TC04: Goal filter can be applied (1.0s)
+  ok  35 [chromium] › tests\module-03-program-catalog.spec.js:30:3 › Module 3 — Program catalog (15 scenarios) › M3-TC05: Workout type filter applies (1.1s)
+  ok  36 [chromium] › tests\module-03-program-catalog.spec.js:37:3 › Module 3 — Program catalog (15 scenarios) › M3-TC06: Min and max price fields accept values (1.2s)
+  ok  37 [chromium] › tests\module-03-program-catalog.spec.js:45:3 › Module 3 — Program catalog (15 scenarios) › M3-TC07: Programs show workout badge (1.0s)
+  ok  38 [chromium] › tests\module-03-program-catalog.spec.js:51:3 › Module 3 — Program catalog (15 scenarios) › M3-TC08: Program displays trainer name (941ms)
+  ok  39 [chromium] › tests\module-03-program-catalog.spec.js:56:3 › Module 3 — Program catalog (15 scenarios) › M3-TC09: Home CTA navigates to programs (1.1s)
+  ok  40 [chromium] › tests\module-03-program-catalog.spec.js:62:3 › Module 3 — Program catalog (15 scenarios) › M3-TC10: Book deep link preselects program via querystring (1.2s)
+  ok  41 [chromium] › tests\module-03-program-catalog.spec.js:68:3 › Module 3 — Program catalog (15 scenarios) › M3-TC11: Program card shows duration metadata (1.3s)
+  ok  42 [chromium] › tests\module-03-program-catalog.spec.js:73:3 › Module 3 — Program catalog (15 scenarios) › M3-TC12: Program card shows price (1.1s)
+  ok  43 [chromium] › tests\module-03-program-catalog.spec.js:78:3 › Module 3 — Program catalog (15 scenarios) › M3-TC13: Nav programs link works (16.7s)
+  ok  44 [chromium] › tests\module-03-program-catalog.spec.js:84:3 › Module 3 — Program catalog (15 scenarios) › M3-TC14: Empty search still returns grid (smoke) (2.9s)
+  ok  45 [chromium] › tests\module-03-program-catalog.spec.js:91:3 › Module 3 — Program catalog (15 scenarios) › M3-TC15: Loading text disappears after load (943ms)
+  ok  46 [chromium] › tests\module-04-search-filters.spec.js:4:3 › Module 4 — Search & filters (15 scenarios) › M4-TC01: Trainers goal equivalence — flexibility (1.1s)
+  ok  47 [chromium] › tests\module-04-search-filters.spec.js:11:3 › Module 4 — Search & filters (15 scenarios) › M4-TC02: Trainers goal — weight loss partition (1.1s)
+  ok  48 [chromium] › tests\module-04-search-filters.spec.js:18:3 › Module 4 — Search & filters (15 scenarios) › M4-TC03: Trainers workout type — yoga (1.4s)
+  ok  49 [chromium] › tests\module-04-search-filters.spec.js:25:3 › Module 4 — Search & filters (15 scenarios) › M4-TC04: Trainers min rating boundary 0 (1.5s)
+  ok  50 [chromium] › tests\module-04-search-filters.spec.js:32:3 › Module 4 — Search & filters (15 scenarios) › M4-TC05: Trainers min rating high boundary shrinks list (1.6s)
+  ok  51 [chromium] › tests\module-04-search-filters.spec.js:43:3 › Module 4 — Search & filters (15 scenarios) › M4-TC06: Trainers max hourly price filter (2.5s)
+  ok  52 [chromium] › tests\module-04-search-filters.spec.js:50:3 › Module 4 — Search & filters (15 scenarios) › M4-TC07: Programs search boundary — long string (2.5s)
+  ok  53 [chromium] › tests\module-04-search-filters.spec.js:57:3 › Module 4 — Search & filters (15 scenarios) › M4-TC08: Programs goal + type decision table combo (2.1s)
+  ok  54 [chromium] › tests\module-04-search-filters.spec.js:65:3 › Module 4 — Search & filters (15 scenarios) › M4-TC09: Programs price min boundary 0 (1.1s)
+  ok  55 [chromium] › tests\module-04-search-filters.spec.js:72:3 › Module 4 — Search & filters (15 scenarios) › M4-TC10: Programs max price only (1.1s)
+  ok  56 [chromium] › tests\module-04-search-filters.spec.js:79:3 › Module 4 — Search & filters (15 scenarios) › M4-TC11: Trainers combined filters — goal + type (1.3s)
+  ok  57 [chromium] › tests\module-04-search-filters.spec.js:87:3 › Module 4 — Search & filters (15 scenarios) › M4-TC12: Programs meditation modality filter (1.1s)
+  ok  58 [chromium] › tests\module-04-search-filters.spec.js:94:3 › Module 4 — Search & filters (15 scenarios) › M4-TC13: Trainers HIIT pathway exposes Jordan (1.6s)
+  ok  59 [chromium] › tests\module-04-search-filters.spec.js:101:3 › Module 4 — Search & filters (15 scenarios) › M4-TC14: Reset trainers clears restrictive rating (1.2s)
+  ok  60 [chromium] › tests\module-04-search-filters.spec.js:109:3 › Module 4 — Search & filters (15 scenarios) › M4-TC15: Programs general goal tag (1.5s)
+  ok  61 [chromium] › tests\module-05-session-booking-1-ui.spec.js:32:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC01: Guest sees sign-in hint on book page (12.0s)
+  ok  62 [chromium] › tests\module-05-session-booking-1-ui.spec.js:37:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC02: Book route reachable from navigation (7.2s)
+  ok  63 [chromium] › tests\module-05-session-booking-1-ui.spec.js:43:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC03: Empty program selection shows no slot rows for booking (3.3s)
+  x   64 [chromium] › tests\module-05-session-booking-1-ui.spec.js:49:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC04: Slot rows include schedule copy (22.9s)
+(node:96028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:96028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  65 [chromium] › tests\module-05-session-booking-1-ui.spec.js:55:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC05: Calendar section exposes heading (3.6s)
+  ok  66 [chromium] › tests\module-05-session-booking-1-ui.spec.js:60:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC06: Program picker lists every active program (2.6s)
+  ok  67 [chromium] › tests\module-05-session-booking-1-ui.spec.js:66:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC07: Login hint deep-links to auth screen (2.4s)
+  ok  68 [chromium] › tests\module-05-session-booking-1-ui.spec.js:72:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC08: Initial book error area is hidden (2.6s)
+  x   69 [chromium] › tests\module-05-session-booking-1-ui.spec.js:77:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC09: Slot rows render deterministic ids for automation (23.3s)
+(node:102372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:102372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   70 [chromium] › tests\module-05-session-booking-1-ui.spec.js:85:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC10: Guests still see sign-in guidance when slots are listed (4.0h)
+(node:103632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:103632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   71 [chromium] › tests\module-05-session-booking-2-mutations.spec.js:12:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC12: First booking succeeds with confirmation copy (29.4s)
+  -   72 [chromium] › tests\module-05-session-booking-2-mutations.spec.js:26:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC13: Duplicate booking same slot surfaces error
+  -   73 [chromium] › tests\module-05-session-booking-2-mutations.spec.js:54:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC14: Sessions shows pending booking state
+  -   74 [chromium] › tests\module-05-session-booking-2-mutations.spec.js:63:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC15: Additional open slot can still be booked
+  -   75 [chromium] › tests\module-05-session-booking-2-mutations.spec.js:77:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC16: Member authenticates for booking
+(node:102272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:102272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  76 [chromium] › tests\module-06-session-lifecycle.spec.js:10:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC01: Guest is prompted on sessions route (3.6s)
+  ok  77 [chromium] › tests\module-06-session-lifecycle.spec.js:15:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC02: Trainer inbox uses training copy (5.0s)
+  ok  78 [chromium] › tests\module-06-session-lifecycle.spec.js:23:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC03: Alt member signs in for payment-focused flows (3.3s)
+  x   79 [chromium] › tests\module-06-session-lifecycle.spec.js:29:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC04: Book PAY slot for HIIT program (18.4s)
+  -   80 [chromium] › tests\module-06-session-lifecycle.spec.js:43:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC05: Mock payment confirms reservation
+  -   81 [chromium] › tests\module-06-session-lifecycle.spec.js:51:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC06: Pay CTA disappears after successful mock checkout
+  -   82 [chromium] › tests\module-06-session-lifecycle.spec.js:60:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC07: Member can cancel a fresh pending booking
+  -   83 [chromium] › tests\module-06-session-lifecycle.spec.js:78:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC08: Reschedule request moves status to pending approval
+  -   84 [chromium] › tests\module-06-session-lifecycle.spec.js:98:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC09: Trainer can approve reschedule request
+  -   85 [chromium] › tests\module-06-session-lifecycle.spec.js:107:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC10: Trainer completes confirmed session
+  -   86 [chromium] › tests\module-06-session-lifecycle.spec.js:116:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC11: Member dashboard reflects progress totals
+  -   87 [chromium] › tests\module-06-session-lifecycle.spec.js:124:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC12: Sessions grid renders each booking row
+  -   88 [chromium] › tests\module-06-session-lifecycle.spec.js:131:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC13: Cancel CTA hidden after completion lifecycle
+  -   89 [chromium] › tests\module-06-session-lifecycle.spec.js:141:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC14: Sessions UI exposes reschedule controls when eligible
+  -   90 [chromium] › tests\module-06-session-lifecycle.spec.js:153:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC15: Sessions error banner hidden on happy path reload
+(node:65048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  91 [chromium] › tests\module-07-reviews.spec.js:8:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC01: Guest cannot see composer on trainer page (2.8s)
+  ok  92 [chromium] › tests\module-07-reviews.spec.js:13:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC02: Composer renders for authenticated member (1.8s)
+  ok  93 [chromium] › tests\module-07-reviews.spec.js:20:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC03: Submitting scoped review shows success banner (1.9s)
+  ok  94 [chromium] › tests\module-07-reviews.spec.js:33:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC04: Rating select defaults are adjustable (1.7s)
+  ok  95 [chromium] › tests\module-07-reviews.spec.js:41:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC05: Optional program scope can target a class (1.6s)
+  ok  96 [chromium] › tests\module-07-reviews.spec.js:49:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC06: Comment textarea accepts long constructive feedback (1.6s)
+  ok  97 [chromium] › tests\module-07-reviews.spec.js:58:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC07: Reviews list container is always present (1.1s)
+  ok  98 [chromium] › tests\module-07-reviews.spec.js:63:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC08: Review cards expose stable selectors (1.2s)
+  ok  99 [chromium] › tests\module-07-reviews.spec.js:69:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC09: Trainer role hides composer (1.6s)
+  ok 100 [chromium] › tests\module-07-reviews.spec.js:76:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC10: Duplicate review attempt surfaces API error in UI (2.1s)
+  ok 101 [chromium] › tests\module-07-reviews.spec.js:87:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC11: Star copy is visible on existing reviews (2.0s)
+  ok 102 [chromium] › tests\module-07-reviews.spec.js:92:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC12: Review form submit button is reachable (1.9s)
+  ok 103 [chromium] › tests\module-07-reviews.spec.js:99:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC13: General review option remains available (2.2s)
+  ok 104 [chromium] › tests\module-07-reviews.spec.js:107:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC14: Trainer detail hero remains stable after review interaction (2.2s)
+  ok 105 [chromium] › tests\module-07-reviews.spec.js:116:3 › Module 7 — Ratings & reviews (15 scenarios) › M7-TC15: Reviews route accessible without auth (1.5s)
+  ok 106 [chromium] › tests\module-08-progress.spec.js:8:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC01: Guest sees dashboard CTA (1.5s)
+  ok 107 [chromium] › tests\module-08-progress.spec.js:13:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC02: Member stats render numeric tiles (1.8s)
+  ok 108 [chromium] › tests\module-08-progress.spec.js:23:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC03: Logging workout shows confirmation banner (3.9s)
+  ok 109 [chromium] › tests\module-08-progress.spec.js:32:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC04: Calories boundary accepts zero (1.9s)
+  ok 110 [chromium] › tests\module-08-progress.spec.js:41:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC05: Large calorie entries are accepted within range (1.8s)
+  ok 111 [chromium] › tests\module-08-progress.spec.js:50:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC06: Dashboard loads without fatal error (2.9s)
+  ok 112 [chromium] › tests\module-08-progress.spec.js:57:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC07: Progress nav link reachable (1.6s)
+  ok 113 [chromium] › tests\module-08-progress.spec.js:66:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC08: Stats numbers are non-negative strings in UI (1.4s)
+  ok 114 [chromium] › tests\module-08-progress.spec.js:75:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC09: Log form remains mounted after submit (1.5s)
+  ok 115 [chromium] › tests\module-08-progress.spec.js:83:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC10: Trainer dashboard also surfaces stats shell (1.6s)
+  ok 116 [chromium] › tests\module-08-progress.spec.js:90:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC11: Hero copy explains metrics (1.4s)
+  ok 117 [chromium] › tests\module-08-progress.spec.js:97:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC12: Calories field defaults to numeric entry (1.5s)
+  ok 118 [chromium] › tests\module-08-progress.spec.js:104:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC13: Dashboard accessible post refresh (2.0s)
+  ok 119 [chromium] › tests\module-08-progress.spec.js:118:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC14: Attendance tile mirrors label (2.1s)
+  ok 120 [chromium] › tests\module-08-progress.spec.js:125:3 › Module 8 — Progress tracking (15 scenarios) › M8-TC15: Streak tile highlights consistency metric (2.1s)
+
+
+  1) [chromium] › tests\module-05-session-booking-1-ui.spec.js:49:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC04: Slot rows include schedule copy 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid^="slot-row-"]').first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for locator('[data-testid^="slot-row-"]').first()[22m
+
+
+      26 |   await page.getByTestId('book-program-select').selectOption(String(programId));
+      27 |   await slotsWait;
+    > 28 |   await expect(page.locator('[data-testid^="slot-row-"]').first()).toBeVisible({ timeout: 20_000 });
+         |                                                                    ^
+      29 | }
+      30 |
+      31 | test.describe('Module 5 — Session booking UI (10 scenarios)', () => {
+        at selectProgramAndWaitSlots (c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:28:68)
+        at c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:51:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--47710--rows-include-schedule-copy-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\module-05-session-booking--47710--rows-include-schedule-copy-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--47710--rows-include-schedule-copy-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\module-05-session-booking--47710--rows-include-schedule-copy-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests\module-05-session-booking-1-ui.spec.js:77:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC09: Slot rows render deterministic ids for automation 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid^="slot-row-"]').first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for locator('[data-testid^="slot-row-"]').first()[22m
+
+
+      26 |   await page.getByTestId('book-program-select').selectOption(String(programId));
+      27 |   await slotsWait;
+    > 28 |   await expect(page.locator('[data-testid^="slot-row-"]').first()).toBeVisible({ timeout: 20_000 });
+         |                                                                    ^
+      29 | }
+      30 |
+      31 | test.describe('Module 5 — Session booking UI (10 scenarios)', () => {
+        at selectProgramAndWaitSlots (c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:28:68)
+        at c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:79:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--567f5-ministic-ids-for-automation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\module-05-session-booking--567f5-ministic-ids-for-automation-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--567f5-ministic-ids-for-automation-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\module-05-session-booking--567f5-ministic-ids-for-automation-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests\module-05-session-booking-1-ui.spec.js:85:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC10: Guests still see sign-in guidance when slots are listed 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid^="slot-row-"]').first()
+    Expected: visible
+    Timeout: 20000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 20000ms[22m
+    [2m  - waiting for locator('[data-testid^="slot-row-"]').first()[22m
+    [2m    - waiting for" http://localhost:5173/book" navigation to finish...[22m
+    [2m    - navigated to "http://localhost:5173/book"[22m
+
+
+      26 |   await page.getByTestId('book-program-select').selectOption(String(programId));
+      27 |   await slotsWait;
+    > 28 |   await expect(page.locator('[data-testid^="slot-row-"]').first()).toBeVisible({ timeout: 20_000 });
+         |                                                                    ^
+      29 | }
+      30 |
+      31 | test.describe('Module 5 — Session booking UI (10 scenarios)', () => {
+        at selectProgramAndWaitSlots (c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:28:68)
+        at c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-1-ui.spec.js:87:5
+
+    [31mTearing down "context" exceeded the test timeout of 60000ms.[39m
+
+    Error: browserContext.close: Protocol error (Target.disposeBrowserContext): Failed to find context with id A0435AC47DDD95DB897F55F7E7A5F6CF
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--36fe6-dance-when-slots-are-listed-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\module-05-session-booking--36fe6-dance-when-slots-are-listed-chromium\error-context.md
+
+  4) [chromium] › tests\module-05-session-booking-2-mutations.spec.js:12:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC12: First booking succeeds with confirmation copy 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid^="slot-row-"]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('[data-testid^="slot-row-"]').first()[22m
+
+
+      17 |     await bp.selectProgramByValue(data.programs.vinyasaId);
+      18 |     await expect(bp.programSelect).toHaveValue(String(data.programs.vinyasaId));
+    > 19 |     await expect(page.locator('[data-testid^="slot-row-"]').first()).toBeVisible({ timeout: 15_000 });
+         |                                                                      ^
+      20 |     await expect(page.getByTestId('book-login-hint')).toHaveCount(0);
+      21 |     const firstBook = await firstOpenBookButton(page, bp);
+      22 |     await expect(firstBook).toBeEnabled({ timeout: 20_000 });
+        at c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-05-session-booking-2-mutations.spec.js:19:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--ddbf5-eeds-with-confirmation-copy-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\module-05-session-booking--ddbf5-eeds-with-confirmation-copy-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\module-05-session-booking--ddbf5-eeds-with-confirmation-copy-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\module-05-session-booking--ddbf5-eeds-with-confirmation-copy-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [chromium] › tests\module-06-session-lifecycle.spec.js:29:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC04: Book PAY slot for HIIT program 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[data-testid^="slot-row-"]').first()
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('[data-testid^="slot-row-"]').first()[22m
+
+
+      34 |     await bp.selectProgramByValue(data.programs.hiitId);
+      35 |     await expect(bp.programSelect).toHaveValue(String(data.programs.hiitId));
+    > 36 |     await expect(page.locator('[data-testid^="slot-row-"]').first()).toBeVisible({ timeout: 15_000 });
+         |                                                                      ^
+      37 |     await expect(page.getByTestId('book-login-hint')).toHaveCount(0);
+      38 |     const hiitBook = await firstOpenBookButton(page, bp);
+      39 |     await expect(hiitBook).toBeEnabled({ timeout: 15_000 });
+        at c:\Users\Keert\OneDrive\Documents\Capstone\yoga-fitness-platform\playwright\tests\module-06-session-lifecycle.spec.js:36:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\module-06-session-lifecycl-a155d-k-PAY-slot-for-HIIT-program-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\module-06-session-lifecycl-a155d-k-PAY-slot-for-HIIT-program-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\module-06-session-lifecycl-a155d-k-PAY-slot-for-HIIT-program-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\module-06-session-lifecycl-a155d-k-PAY-slot-for-HIIT-program-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [chromium] › tests\module-05-session-booking-1-ui.spec.js:49:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC04: Slot rows include schedule copy 
+    [chromium] › tests\module-05-session-booking-1-ui.spec.js:77:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC09: Slot rows render deterministic ids for automation 
+    [chromium] › tests\module-05-session-booking-1-ui.spec.js:85:3 › Module 5 — Session booking UI (10 scenarios) › M5-TC10: Guests still see sign-in guidance when slots are listed 
+    [chromium] › tests\module-05-session-booking-2-mutations.spec.js:12:3 › Module 5 — Booking mutations (5 serial scenarios) › M5-TC12: First booking succeeds with confirmation copy 
+    [chromium] › tests\module-06-session-lifecycle.spec.js:29:3 › Module 6 — Session lifecycle & payments (15 scenarios) › M6-TC04: Book PAY slot for HIIT program 
+  15 did not run
+  100 passed (6.4h)

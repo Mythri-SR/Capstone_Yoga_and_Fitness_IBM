@@ -1,0 +1,15 @@
+backend/node_modules/
+frontend/node_modules/
+
+backend/.env
+backend/.env.example
+
+
+
+playwright/allure-results/
+playwright/allure-report/
+playwright/playwright-report/
+playwright/node_modules
+
+playwright/test-results/
+
