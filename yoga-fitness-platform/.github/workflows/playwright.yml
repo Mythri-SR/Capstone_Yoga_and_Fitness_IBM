@@ -7,11 +7,9 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: playwright-allure-pages
+  group: playwright-allure
   cancel-in-progress: true
 
 jobs:
@@ -96,24 +94,8 @@ jobs:
       - name: Generate Allure report
         run: allure generate ./playwright/allure-results --clean -o ./allure-report
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload Allure artifact
+        uses: actions/upload-artifact@v4
         with:
+          name: allure-report
           path: ./allure-report
-
-  deploy:
-    needs: test-and-report
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
