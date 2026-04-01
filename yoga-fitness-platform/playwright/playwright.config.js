@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const baseURL = process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173';
+const reuseExistingServer = process.env.PW_REUSE_SERVER === '1' ? true : !process.env.CI;
 
 export default defineConfig({
   globalSetup: './global-setup.js',
@@ -35,15 +36,15 @@ export default defineConfig({
       cwd: join(root, '../backend'),
       url: 'http://localhost:4000/health',
       //reuseExistingServer: process.env.PW_REUSE_SERVER === '1',
-      reuseExistingServer: true,
+      reuseExistingServer,
       timeout: 120_000,
     },
     {
-      command: 'npm run dev',
+      command: 'npm run dev -- --host 127.0.0.1 --port 5173',
       cwd: join(root, '../frontend'),
       url: baseURL,
       //reuseExistingServer: process.env.PW_REUSE_SERVER === '1',
-      reuseExistingServer: true,
+      reuseExistingServer,
       timeout: 120_000,
     },
   ],

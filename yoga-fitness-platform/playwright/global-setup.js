@@ -7,6 +7,7 @@ const root = dirname(fileURLToPath(import.meta.url));
 
 function loadBackendEnv() {
   const p = join(root, '../backend/.env');
+  if (!existsSync(p)) return;
   const text = readFileSync(p, 'utf8');
   for (const line of text.split('\n')) {
     const t = line.trim();

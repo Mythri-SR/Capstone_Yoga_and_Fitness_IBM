@@ -1,0 +1,98 @@
+name: Playwright (Chromium)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: playwright-chromium
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: yoga_fitness
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=20
+    env:
+      CI: true
+      PLAYWRIGHT_BASE_URL: http://127.0.0.1:5173
+      PW_REUSE_SERVER: "0"
+      PW_WORKERS: "2"
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: yoga_fitness
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            yoga-fitness-platform/backend/package-lock.json
+            yoga-fitness-platform/frontend/package-lock.json
+            yoga-fitness-platform/playwright/package-lock.json
+
+      - name: Install backend dependencies
+        working-directory: yoga-fitness-platform/backend
+        run: npm ci
+
+      - name: Install frontend dependencies
+        working-directory: yoga-fitness-platform/frontend
+        run: npm ci
+
+      - name: Install Playwright dependencies
+        working-directory: yoga-fitness-platform/playwright
+        run: npm ci
+
+      - name: Install Playwright browsers
+        working-directory: yoga-fitness-platform/playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Install MySQL client
+        run: sudo apt-get update && sudo apt-get install -y default-mysql-client
+
+      - name: Wait for MySQL
+        run: |
+          for i in {1..30}; do
+            mysqladmin ping -h127.0.0.1 -uroot -proot && exit 0
+            sleep 2
+          done
+          echo "MySQL did not become healthy in time"
+          exit 1
+
+      - name: Initialize schema and seed
+        run: |
+          mysql -h127.0.0.1 -P3306 -uroot -proot yoga_fitness < ./yoga-fitness-platform/database/schema.sql
+          mysql -h127.0.0.1 -P3306 -uroot -proot yoga_fitness < ./yoga-fitness-platform/database/seed.sql
+
+      - name: Run Playwright tests (chromium)
+        working-directory: yoga-fitness-platform/playwright
+        run: npx playwright test --project=chromium
+
+      - name: Upload Playwright report (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: yoga-fitness-platform/playwright/playwright-report
